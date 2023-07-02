@@ -1,4 +1,4 @@
-### `Calendar`
+## `Calendar`
 This is a simple calendar application that allows users to see the dates for a specific month and year. The application is built using HTML, CSS, and JavaScript.
 
 ### `Features`
