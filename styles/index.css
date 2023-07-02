@@ -1,0 +1,118 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding: 4.5rem;
+  margin: 0;
+  /* background: #edc0bf;
+  background: linear-gradient(90deg, #edc0bf 0, #c4caef 58%); */
+  font-family: "Inter", sans-serif;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+.calendar-wrapper {
+  width: 400px;
+  margin: 3em auto;
+  padding: 2em;
+  border: 1px solid #dcdcff;
+  border-radius: 15px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+table {
+  clear: both;
+  width: 100%;
+  border: 1px solid #dcdcff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #606060;
+}
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #dcdcff;
+  border-top: 1px solid #dcdcff;
+  width: 14.28571429%;
+}
+td.normal:hover,
+td.not-current:hover,
+td.today:hover {
+  border: 3px dotted #3a7999;
+  color: #3a7999;
+  background: rgba(0, 0, 0, 0);
+}
+td.not-current {
+  color: #cacaca;
+}
+td.today {
+  font-weight: 700;
+  color: #606060;
+  font-size: 1.5em;
+}
+thead td {
+  border: none;
+  color: #606060;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+#btnPrev:before {
+  content: "\f104";
+  font-family: FontAwesome;
+  padding-right: 4px;
+}
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+#btnNext:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  padding-left: 4px;
+}
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #606060;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #676767;
+  font-weight: bold;
+}
